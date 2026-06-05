@@ -21,5 +21,5 @@ A simple and responsive blog landing page built using **HTML5** and **CSS3**.
 2. Open `index.html` in your browser.
 
 ## Author
-Neha
+Neha<br>
 Created as a front-end practice project.
