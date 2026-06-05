@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* NavBar Starts */
+.nav {
+    height: 130px;
+    width: 100%;
+    background-color: rgb(62, 61, 61);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    border: white 1px solid;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 6px;
+
+}
+
+.logo {
+    background-image: url(undraw_focused-dev_gqoa.svg);
+    height: 120px;
+    width: 190px;
+    margin-left: 15px;
+    display: block;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav li {
+    margin: 10px;
+    margin-right: 30px;
+    font-size: 25px;
+    list-style-type: none;
+    align-items: center;
+    display: inline-block;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav li a:hover {
+    font-size: 35px;
+    color: rgb(145, 133, 133);
+    cursor: pointer;
+}
+/* NavBAr ends Here */
+
+/* main Starts here */
+main{
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+.hero {
+    background: linear-gradient(to right, rgb(167, 168, 168), rgb(53, 52, 52), rgb(167, 168, 168));
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgb(72, 69, 69);
+    box-shadow: 1px 1px 10px grey;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(53, 52, 52);
+    border-bottom: 2px solid rgb(72, 69, 69);
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+.container p {
+    color: rgb(50, 50, 50);
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+p strong {
+    color: rgb(42, 45, 49);
+    font-size: 35px;
+    padding-top: 10px;
+    border-bottom: 2px solid rgb(72, 69, 69);
+    box-shadow: 1px grey;
+}
+
+footer {
+    background-color: rgb(53, 52, 52);
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+p strong:hover{
+    color: rgb(0, 3, 7);
+    cursor: pointer;
+}
+
+h2{
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+    0% {color: rgb(53, 52, 52);}
+    50% {color: rgb(167, 168, 168);}
+    100% {color: rgb(53, 52, 52);}
+}   
+
+@media(max-width: 600px){
+    .nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .nav li {
+        margin: 10px 0;
+    }
+    .hero {
+        font-size: 30px;
+    }           
+}
